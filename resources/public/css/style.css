@@ -1,13 +1,14 @@
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+.app-title, .app-desc{
+ margin-bottom: 1em;
+ text-align: center;
 }
 
-body{
- margin: 5em 25%;
- background-color: #fefefe;
- color: #333;
+.scale{
+ margin-bottom: 1em;
+}
+
+.scale>h2{
+ font-size: 1.5rem;
 }
 
 .guitar{
@@ -29,7 +30,7 @@ body{
 }
 
 .fret .note, .fret .note-name, .fret .row-index{
- padding: 0 1em;
+ padding: 0 0.5em;
 }
 
 .dotted-fret{
@@ -41,19 +42,26 @@ body{
 }
 
 .note>button{
+ color: #333;
  min-width: 2em;
  padding: 1em 0;
+ margin: 0;
  border: 0;
  background-color: #f0f0f0;
  cursor: pointer;
 }
 
-.note.class-selected>button{
+.note>.class-selected{
  background-color: #47A3DA;
  color: #fefefe;
 }
 
-.note.selected>button{
+.note>.selected{
  background-color: #93A644;
+ color: #fefefe;
+}
+
+.note>.last-selected{
+ background-color: #DC4634;
  color: #fefefe;
 }
